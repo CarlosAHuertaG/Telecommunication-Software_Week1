@@ -1,0 +1,138 @@
+$ echo Hello World
+Hello World
+$ echo Hello World!
+Hello World!
+$ echo "Hello World!"
+-bash: !": event not found
+$ echo "Hello World"
+Hello World
+$ echo $0
+-bash
+$ A=22
+$ echo $A
+22
+$ B=33
+$ echo $B
+33
+$ B=44
+$ echo $B
+44
+$ 
+
+$ PS1="$ "
+$ PS1=". "
+. 
+. 
+. PS1=" "
+ PS1="                    "
+                    
+
+                    PS1="$ "
+$ 
+
+$ echo $B
+44
+$ echo $B $A
+44 22
+$ echo $B $A 33
+44 22 33
+$ echo $(($A))
+22
+$ echo $($A)
+-bash: 22: command not found
+
+$ echo $A
+22
+$ echo $((($A)))
+22
+$ echo $(((($A))))
+22
+$ 
+
+$ man bash
+$ man eche
+No manual entry for eche
+$ man echo
+$ man echo
+$ echo
+
+$ echo
+
+$ echo -n
+$ 
+
+
+$ echo 22
+22
+$ echo 2233
+2233
+$ man echo
+$ echo 22\n33
+22n33
+$ echo 22 \n 33
+22 n 33
+$ echo 22 '\n' 33
+22 \n 33
+$ man echo
+$ echo -e 22 '\n' 33
+22 
+ 33
+$ date
+Tue Feb  5 11:56:50 EET 2019
+$ date
+Tue Feb  5 11:57:14 EET 2019
+$ 
+
+$ pwd
+/Users/viza
+$ 
+$ 
+$ mkdir ABC
+$ cd ABC/
+$ pwd
+/Users/viza/ABC
+$ cd ..
+$ pwd
+/Users/viza
+$ pwd
+/Users/viza
+$ cd ..
+$ pwd
+/Users
+$ cd ..
+$ pwd
+/
+$ cd ..
+$ pwd
+/
+$ cd
+$ pwd
+/Users/viza
+$ cd
+$ cd ABC
+$ pwd
+/Users/viza/ABC
+$ 
+$ pwd
+/Users/viza/ABC
+$ ls
+$ ls -l
+$ ls -a
+.    ..
+$ pwd
+/Users/viza/ABC
+$ cd .
+$ cd .. 
+$ pwd
+/Users/viza
+$ cd -   
+/Users/viza/ABC
+$ cd /
+$ pwd
+/
+$ cd -   
+/Users/viza/ABC
+$ cd -   
+/
+$ cd -   
+/Users/viza/ABC
